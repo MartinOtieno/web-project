@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        body{
+            background-color:aqua;
+        }
+        .heading{
+            width:90%;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            flex-direction: column;
+            text-align: center;
+            margin: 20px;
+        }
+        .heading h1{
+            font-size: 50px;
+            color:#000;
+            margin-bottom: 25;
+            position:relative;
+        }
+        .heading h1::after{
+            content:"";
+            position: absolute;
+            width:100%;
+            height: 4px;
+            display:block;
+            margin:0 auto;
+            background-color: #4caf50;
+        }
+        .headingp{
+            font-size: 18;
+            color: #666;
+            margin-bottom: 35;
+        }
+        .container{
+            width: 90%;
+            margin:0 auto;
+            padding:10px 20px;
+        }
+        .about{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .about-image{
+            flex: 1;
+            margin-right: 40px;
+            overflow:hidden;
+        }
+        .about-image img{
+            max-width: 100%;
+            height: auto;
+            display: block;
+            transition: 0.5s ease;
+            margin-top: 1000px;
+        }
+        .about-image:hover img{transition: scale(1.2);}
+        .about-content{
+            flex:1;
+        }
+            button{
+            background: #1c00b5;
+            width: 100px;
+            border: none;
+            outline: none;
+            color:#fff;
+            height: 35px;
+            border-radius: 30px;
+            margin-top: 20px;
+            box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: "roboto",sans-serif;
+        }
+    </style>
+        <a href="index.html"><button>Home</button></a>
+        <div class="heading">
+            <h1>About us</h1>
+            <p>Electronic hub is the most trusted and reliable online shop where customers find all whatever electronic they need at a cheaper price.And the delivery of the items is done nation wide </p>
+        </div>
+        <div class="container">
+            <section class="about">
+                <div class="about-content">
+                    <h2 style="margin-left:0px;">Quality Products</h2>
+                    <p>Our products are of high quality from different suppliers in the market.</p>
+                    <a href="" class="read-more">Read More</a>
+                </div>
+            </section>
+        </div>
+</html>
